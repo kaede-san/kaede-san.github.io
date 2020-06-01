@@ -18,7 +18,7 @@ h2, h3 {
 
 header {
   background-color: white;
-  margin: 20px;
+  margin: 20px 100px;
   padding: 15px 20px;
   border-radius: 5px;
 }
@@ -44,29 +44,74 @@ header {
   margin-left: 7.5px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 30px;
-}
-
-.navbar li {
-  cursor: pointer;
-  transition-duration: 0.1s;
-}
-
-.navbar li:hover {
-  opacity: 0.5;
-  transition-duration: 0.1s;
-}
-
 .header-maple-dark-img {
   width: 0.9em;
   margin-bottom: -1px;
   margin-right: 5px;
 }
 
+body {
+  background-color: #c53d43;
+  color: #331012;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.contents {
+  background-color: white;
+  margin: 20px 100px 0 100px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+
+footer {
+  background-color: white;
+  margin: 20px 100px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.about-kaede-com, .profile, .policy, .career, .skill, .education, .contact {
+  margin-bottom: 30px;
+}
+
+.profile-detail {
+  display: flex;
+}
+
+.profile-detail a {
+  text-decoration: underline;
+}
+
+.profile-icon {
+  width: 250px;
+  margin-right: 20px;
+}
+
+.career dt, .education dt {
+  float: left;
+}
+
+.career dd, .education dd {
+  margin-left: 150px;
+}
+
+.skill ul {
+  list-style-type: disc;
+  padding: 10px 0 10px 20px;
+}
+
+.skill h3 {
+  margin-top: 20px;
+}
+
 @media (max-width: 767px) {
+  header {
+    margin: 20px;
+  }
+
   .title {
     font-size: 1.5em;
   }
@@ -80,88 +125,19 @@ header {
     margin-left: 2px;
   }
 
-  .navbar {
+  .profile-detail {
     display: block;
-    margin: 0 5px;
   }
 
-  .navbar li {
-    padding: 2px 0;
-  }
-}
-
-body {
-  background-color: #c53d43;
-  color: #331012;
-  font-family: 'Noto Sans JP', sans-serif;
-}
-
-.contents {
-  background-color: white;
-  margin: 20px 20px 0 20px;
-  padding: 15px 20px;
-  border-radius: 5px;
-  word-wrap: break-word;
-}
-
-footer {
-  background-color: white;
-  margin: 20px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 1em;
-}
-
-.about-kaede-com, .profile, .policy, .career, .skill-map {
-  margin-bottom: 30px;
-}
-
-.about-activity {
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
-.profile-icon {
-  width: 250px;
-  margin-right: 20px;
-}
-
-.profile-self-introduction {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.position {
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
-.profile-parameters {
-  margin-bottom: 15px;
-}
-
-.profile-param-category {
-  cursor: pointer;
-  margin-left: 15px;
-}
-
-.profile-param-category:hover {
-  opacity: 0.5;
-}
-
-.profile-param-language, .profile-param-fw {
-  border: 1px solid #331012;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.profile-param-fw {
-  margin-top: 10px;
-}
-
-@media (max-width: 767px) {
   .profile-self-introduction {
     display: block;
+  }
+
+  .contents {
+    margin: 20px;
+  }
+
+  footer {
+    margin: 20px;
   }
 }
