@@ -73,7 +73,7 @@ footer {
   font-size: 1em;
 }
 
-.about-kaede-com, .profile, .policy, .career, .skill, .education, .contact {
+.about-kaede-com, .profile, .policy, .career, .skill, .education, .contact, .compose, .hobby {
   margin-bottom: 30px;
 }
 
@@ -81,7 +81,7 @@ footer {
   display: flex;
 }
 
-.profile-detail a {
+.profile-detail a, .compose a {
   text-decoration: underline;
 }
 
@@ -90,7 +90,7 @@ footer {
   margin-right: 20px;
 }
 
-.career dt, .education dt {
+.career dt, .education dt, .compose dt {
   float: left;
 }
 
@@ -98,7 +98,11 @@ footer {
   margin-left: 150px;
 }
 
-.skill ul {
+.compose dd {
+  margin-left: 80px;
+}
+
+.skill ul, .hobby ul {
   list-style-type: disc;
   padding: 10px 0 10px 20px;
 }
